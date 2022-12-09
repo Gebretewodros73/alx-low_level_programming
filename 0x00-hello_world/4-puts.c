@@ -1,4 +1,4 @@
-#include<stdout.h>
+#include<stdio.h>
 /**
  * main - this prints programming is like building a multilingual puzzle
  * Return: this returns 0
