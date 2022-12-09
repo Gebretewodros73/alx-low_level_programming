@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main -main block
- * return: 0
+ * main - this prints programming is like building a multilingual puzzle
+ * return: this returns 0
  */
 int main(void)
 {
