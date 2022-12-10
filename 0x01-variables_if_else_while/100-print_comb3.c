@@ -1,26 +1,26 @@
 #include<stdio.h>
 /**
- * main - combination of two digit
+ * main - Combination of single -digit
  * Return: returns zero
  */
 int main(void)
 {
-	int c;
-	int d = 0;
-	
-	while (d < 10)
-	{
-		c =0;
-		while(c < 10)
-		{
-			if (d !* c && d < c)
-			{
-				putchar(
+	int n;
+	int m;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
+	for (n = 0; n <= 8; n++)
 	{
-		putchar(lc);
+		for (m = n + 1; m <= 9; m++)
+		{
+			putchar((n % 10) + '0');
+			putchar((m % 10) + '0');
+			if (n != 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
-	putchar('\n');
+		putchar('\n');
 	return (0);
 }
