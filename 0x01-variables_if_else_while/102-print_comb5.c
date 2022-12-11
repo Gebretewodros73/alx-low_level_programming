@@ -43,6 +43,9 @@ int main(void)
 			}
 		}
 	}
+	putchar('\b');
+	putchar('\b');
+	putchar(' ');
 	putchar('\n');
 	return (0);
 }
