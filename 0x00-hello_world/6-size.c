@@ -7,7 +7,7 @@ int main(void)
 {
 	int sizeofint;
 	float sizeoffloat;
-	double sizeofdoubel;
+	double sizeofdouble;
 	char sizeofchar;
 
 	printf("size of int: %ld bytes\n", sizeof(sizeofint));
