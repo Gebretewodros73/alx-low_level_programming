@@ -12,7 +12,7 @@ int main(void)
 	float sizeoffloat;
 
 
-	printf("size of a char: %ld byte(s)\n", sizeof(sizeofchar));
+	printf("Size of a char: %ld byte(s)\n", sizeof(sizeofchar));
 	printf("Size of an int: %ld byte(s)\n", sizeof(sizeofint));
 	printf("Size of a long int: %ld byte(s)\n", sizeof(sizeofdouble));
 	printf("Size of a long long int: %ld byte(s)\n", sizeof(sizeofldouble));
