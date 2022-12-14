@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * print_alphabet - alphabet in order ten times
+ * print_alphabet_x10 - alphabet in order ten times
  * Return: void
  */
+
 void print_alphabet_x10(void)
 {
 	char t, u;
