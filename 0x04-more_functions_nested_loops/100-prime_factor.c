@@ -8,6 +8,7 @@ int main(void)
 	long int i, j, t;
 
 	i = 612852475143;
+	printf("The prime factor of 612852475143 are");
 	for (j = 2; j <= i; j++)
 	{
 		t = i % j;
