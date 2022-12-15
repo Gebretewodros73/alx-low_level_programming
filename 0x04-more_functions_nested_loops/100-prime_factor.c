@@ -22,7 +22,7 @@ int main(void)
 			}
 			else
 			{
-				printf("\b and %ld\n", j);
+				printf("\b and %ld .\n", j);
 			}
 		}
 	}
