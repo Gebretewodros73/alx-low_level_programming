@@ -26,6 +26,6 @@ int main(void)
 		msfive = msfive + mfive[j];
 	}
 	ms = msthree + msfive;
-	printf("%d'\n'", ms);
+	printf("%d\n", ms);
 	return (0);
 }
