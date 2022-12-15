@@ -7,8 +7,7 @@ int main(void)
 {
 	long int i, j, t;
 
-	printf("input your number\n");
-	scanf("%ld", &i);
+	i = 612852475143;
 	for (j = 2; j <= i; j++)
 	{
 		t = i % j;
