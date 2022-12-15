@@ -21,7 +21,7 @@ int main(void)
 			}
 			else
 			{
-				printf("\b\b %ld\n", j);
+				printf("%ld\n", j);
 			}
 		}
 	}
