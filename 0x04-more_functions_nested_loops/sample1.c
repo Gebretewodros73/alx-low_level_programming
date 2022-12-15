@@ -14,8 +14,7 @@ int main(void)
 		t = i % j;
 		if (t == 0)
 		{
-			if (i != j)
-			{
+			if (i != j){
 				printf("%ld,", j);
 				i = i / j;
 				j = j - 1;
@@ -25,6 +24,10 @@ int main(void)
 				printf("%ld", j);
 			}
 		}
+		else{
+			continue ;
+		}
+
 	}
 	printf("\n");
 	return (0);
