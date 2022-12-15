@@ -15,16 +15,15 @@ int main(void)
 		{
 			if (i != j)
 			{
-				printf("%ld,", j);
+				printf(" %ld,", j);
 				i = i / j;
 				j = j - 1;
 			}
 			else
 			{
-				printf("%ld", j);
+				printf("\b and %ld\n", j);
 			}
 		}
 	}
-	printf("\n");
 	return (0);
 }
