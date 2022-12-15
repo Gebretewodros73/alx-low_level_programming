@@ -6,21 +6,21 @@
  */
 void print_to_98(int n)
 {
-	int i, j;
+	int i;
 
 	if (n < 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			if (9 >= i && i >= -9)
-			{
-				_putchar((i % 10) + '0');
+			/*if (9 >= i && i >= -9)
+			{*/
+				_putchar('0' + n);
 				if (i != 98)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
-			}
+			/*}
 			else if ((99 >= i && i >= 9) || (-9 >= i && i >= -99 ))
 			{
 				_putchar((i / 10) + '0');
@@ -42,7 +42,7 @@ void print_to_98(int n)
                                         _putchar(',');
                                         _putchar(' ');
                                 }
-                        }
+                        }*/
 
 		}
 	}
@@ -50,15 +50,15 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			if (9 >= i && i >= -9)
-			{
-				_putchar((i % 10) + '0');
+			/*if (9 >= i && i >= -9)
+			{*/
+				_putchar('0' + n);
 				if (i != 98)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
-			}
+			/*}
 			else if (99 >= i && i >= -99)
 			{
 				_putchar((i / 10) + '0');
@@ -80,7 +80,7 @@ void print_to_98(int n)
                                         _putchar(',');
                                         _putchar(' ');
                                 }
-			}
+			}*/
 		}
 	}
 	_putchar('\n');
