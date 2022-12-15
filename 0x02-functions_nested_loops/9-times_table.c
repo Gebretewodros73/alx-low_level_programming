@@ -1,0 +1,39 @@
+#include "main.h"
+/**
+ * time_table - times table print
+ * Return: return time table value
+ */
+void times_table(void)
+{
+	int i, j, t;
+
+	t = 0;
+
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			t = i * j;
+			if (t <= 9)
+			{
+				_putchar((t % 10) + '0');
+				_putchar(32);
+				if (j != 9)
+				{
+					_putchar(32);
+				}
+			}
+			else
+			{
+				_putchar((t / 10) + '0');
+				_putchar((t % 10) + '0');
+				if (j != 9)
+				{
+					_putchar(32);
+				}
+			}
+		}
+		_putchar('\n');
+	}
+}
+
