@@ -8,7 +8,7 @@ int main(void)
 	long int i, j, t;
 
 	i = 612852475143;
-	printf("The prime factor of 612852475143 are");
+	printf("The prime factor of 612852475143 are ");
 	for (j = 2; j <= i; j++)
 	{
 		t = i % j;
@@ -16,13 +16,13 @@ int main(void)
 		{
 			if (i != j)
 			{
-				printf(" %ld,", j);
+				printf("%ld, ", j);
 				i = i / j;
 				j = j - 1;
 			}
 			else
 			{
-				printf("\b and %ld .\n", j);
+				printf("\b\b and %ld .\n", j);
 			}
 		}
 	}
