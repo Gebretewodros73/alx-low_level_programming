@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long int i, j, fb[50];
+	long int i, fb[50];
 
 	fb[1] = 1;
 	fb[2] = 2;
