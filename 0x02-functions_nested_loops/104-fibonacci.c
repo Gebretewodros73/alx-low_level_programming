@@ -10,8 +10,9 @@ int main(void)
 
 	fb1 = 1;
 	fb2 = 2;
+	n = 98;
 
-	scanf("%d", &n);
+	/*scanf("%d", &n);*/
 	printf("%ld, %ld, ", fb1, fb2);
 
 	for (i = 3; i <= n; i++)
