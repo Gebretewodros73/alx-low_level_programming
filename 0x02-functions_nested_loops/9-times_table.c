@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * time_table - times table print
+ * times_table - times table print
  * Return: return time table value
  */
 void times_table(void)
@@ -38,7 +38,6 @@ void times_table(void)
 				}
 			}
 		}
-		_putchar(36);
 		_putchar('\n');
 	}
 }
