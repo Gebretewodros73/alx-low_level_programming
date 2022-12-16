@@ -5,27 +5,38 @@
  */
 int main(void)
 {
-	long int i, j, t;
+	long int i, j, t, d, s;
 
 	printf("input your number\n");
 	scanf("%ld", &i);
-	for (j = 2; j <= i; j++)
+	if (i < 0)
 	{
+		s= i;
+		i = i * -1;
+	}
+	for (j = 2 ; j <= i; j++)
+	{
+		d = j;
 		t = i % j;
 		if (t == 0)
 		{
 			if (i != j){
-				printf("%ld,", j);
+				if (s < 0)
+				{
+					d = j * -1;
+				}
+				printf("%ld,", d);
 				i = i / j;
 				j = j - 1;
 			}
 			else
 			{
-				printf("%ld", j);
+				if (s < 0)
+				{
+					d = j * -1;
+				}
+				printf("%ld", d);
 			}
-		}
-		else{
-			continue ;
 		}
 
 	}

@@ -1,0 +1,39 @@
+#include "main.h"
+/**
+ * prime_number - print prime factor of a number
+ * @n: prime number of n
+ * Return: return zero
+ */
+void print_number(int n)
+{
+	int j, t, s;
+	s =n;
+	if (n < 0)
+		n = n * -1;
+
+	for (j = 2; j <= n; j++) {
+		t = n % j;
+		if (t == 0) {
+			if (n != j) {
+				if (s < 0)
+					_putchar('-');
+				_putchar('0' + j);
+				n = n / j;
+				j = j - 1;
+			}
+			else {
+				if (s < 0)
+					_putchar('-');
+				if (j > 9) {
+					_putchar(j / 10 + '0');
+					_putchar(j % 10 + '0');
+				}
+				else
+					_putchar('0' + j);
+			}
+			if (j != n)
+				_putchar(',');
+		}
+	}
+	_putchar('\n');
+}
