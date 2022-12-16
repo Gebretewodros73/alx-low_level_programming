@@ -17,7 +17,7 @@ void print_number(int n)
 	{
 		_putchar(o / 10 + '0');
 		_putchar(o % 10 + '0');
-		_putchar(m % 100 + '0');
+		_putchar(q / 10 + '0');
 		_putchar(q % 10 + '0');
 	}
 	else if (n > 99)
@@ -35,5 +35,4 @@ void print_number(int n)
 	{
 		_putchar('0' + n);
 	}
-	_putchar('\n');
 }
