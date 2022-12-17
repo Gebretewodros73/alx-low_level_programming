@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - cube with #
- * @size:number of line
+ * @size :number of line
  * Return: void
  */
 
@@ -17,5 +17,4 @@ void print_square(int size)
 		}
 		_putchar('\n');
 	}
-		_putchar('\n');
 }
