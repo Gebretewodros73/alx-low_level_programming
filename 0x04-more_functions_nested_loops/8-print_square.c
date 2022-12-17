@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_diagonal - alphabet in order ten times
- * @n:number of line
+ * print_square - cube with #
+ * @size:number of line
  * Return: void
  */
 
