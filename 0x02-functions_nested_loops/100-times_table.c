@@ -1,7 +1,8 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * times_table - times table print
+ * print_times_table - times table print
+ * @n: size of table
  * Return: return time table value
  */
 void print_times_table(int n)
@@ -9,7 +10,7 @@ void print_times_table(int n)
 	int i, j, t;
 
 	t = 0;
-	if (n > 0 && n < 15)
+	if (n >= 0 && n < 15)
 	{
 	for (i = 0; i <= n; i++)
 	{
