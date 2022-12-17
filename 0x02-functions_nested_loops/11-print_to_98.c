@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * print_to_98 - all numbers to 98.
  * @n: number to start from
@@ -8,83 +9,25 @@ void print_to_98(int n)
 {
 	int i;
 
-	if (n < 98)
+	if (n <= 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			/*if (9 >= i && i >= -9)
-			{*/
-				_putchar('0' + n);
-				if (i != 98)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			/*}
-			else if ((99 >= i && i >= 9) || (-9 >= i && i >= -99 ))
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-				if (i != 98)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			 else
-                        {
-                                _putchar((i / 100) + '0');
-                                j = i / 10;
-                                _putchar((j % 10) + '0');
-                                _putchar((i % 100) + '0');
-                                if (i != 98)
-                                {
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }
-                        }*/
-
+			if (i != 98)
+				printf("%d, ", i);
+			else
+				printf("%d", i);
 		}
 	}
 	else
 	{
 		for (i = n; i >= 98; i--)
 		{
-			/*if (9 >= i && i >= -9)
-			{*/
-				_putchar('0' + n);
-				if (i != 98)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			/*}
-			else if (99 >= i && i >= -99)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-				if (i != 98)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
+			if (i != 98)
+				printf("%d, ", i);
 			else
-			{
-                                _putchar((i / 100) + '0');
-				j = i / 10;
-				_putchar((j % 10) + '0');
-                                _putchar((i % 100) + '0');
-                                if (i != 98)
-                                {
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }
-			}*/
+				printf("%d", i);
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
-
-
-
