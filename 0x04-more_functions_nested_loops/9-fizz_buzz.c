@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * print_square - Fizz BUzz FizzBuzz
+ * main - Fizz BUzz FizzBuzz
  * Return: zero
  */
 
@@ -8,7 +8,7 @@ int main(void)
 {
 	int i, j, h;
 
-	for (i = 1;i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		j = i % 3;
 		h = i % 5;
