@@ -2,7 +2,7 @@
 #include<stdio.h>
 /**
  * print_array - prints the othe half
- * @a: array 
+ * @a: array
  * @n: number of array
  * Return: Anything
  */
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	{
 		if (i == 0)
 			printf("%d,", a[i]);
-		else if (i != n-1)
+		else if (i != n - 1)
 			printf(" %d,", a[i]);
 		else
 			printf(" %d", a[i]);
