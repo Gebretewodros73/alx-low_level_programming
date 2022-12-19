@@ -10,10 +10,7 @@ void puts2(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i) <= 9 && *(str + i) >= 0)
-			_putchar('0' + *(str + i));
-		else
-			_putchar(*(str + i));
+		_putchar(*(str + i));
 		_putchar('\n');
 		i++;
 	}
