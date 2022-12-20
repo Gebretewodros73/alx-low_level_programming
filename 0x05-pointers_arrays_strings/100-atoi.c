@@ -1,9 +1,8 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * _strcpy - prints the othe half
- * @src: the character to be ordered
- * @dest:array returned
+ * _atoi - prints the othe half
+ * @s: the character to be ordered
  * Return: Anything
  */
 int _atoi(char *s)
@@ -13,7 +12,7 @@ int _atoi(char *s)
 	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 	{
 		if (s[i] == '-')
-			si *= -1;
+			si = si * -1;
 		i++;
 	}
 	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
@@ -29,6 +28,6 @@ int _atoi(char *s)
 			i++;
 		}
 	}
-	si *= -1;
+	si = si * -1;
 	return (n * si);
 }
