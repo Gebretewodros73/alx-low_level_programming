@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_number - print of a number
- * @n: prime number of n
- * Return: return zero
+ * @n: prime_number of n
+ * Returin: return zero
  */
 void print_number(int n)
 {
