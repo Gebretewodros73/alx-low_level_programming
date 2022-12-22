@@ -6,33 +6,20 @@
  */
 void print_number(int n)
 {
-	int s = n, m = n / 10, o = n / 100, p = n % 1000, q = p % 100;
+	int s = n, i, j = 1;
 
 	if (s < 0)
 	{
 		n = n * -1;
 		_putchar('-');
 	}
-	if (n > 999)
+	i = n;
+	while (i > 9)
 	{
-		_putchar(o / 10 + '0');
-		_putchar(o % 10 + '0');
-		_putchar(q / 10 + '0');
-		_putchar(q % 10 + '0');
+		i = i / 10;
+		j = j * 10;
 	}
-	else if (n > 99)
-	{
-		_putchar(m / 10 + '0');
-		_putchar(m % 10 + '0');
-		_putchar(n % 100 + '0');
-	}
-	else if (n > 9)
-	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
-	}
-	else
-	{
-		_putchar(n + '0');
-	}
+	for (; j >= 1; j = j / 10)
+		_putchar((n / j) % 10 + '0');
 }
+
