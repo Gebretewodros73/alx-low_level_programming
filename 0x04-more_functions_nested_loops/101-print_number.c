@@ -6,20 +6,22 @@
  */
 void print_number(int n)
 {
-	int s = n, i, j = 1;
+	int s, i, j = 1;
 
-	if (s < 0)
+	if (n < 0)
 	{
-		n = n * -1;
 		_putchar('-');
+		s = n * -1;
 	}
-	i = n;
+	else
+		s = n;
+	i = s;
 	while (i > 9)
 	{
 		i = i / 10;
 		j = j * 10;
 	}
 	for (; j >= 1; j = j / 10)
-		_putchar((n / j) % 10 + '0');
+		_putchar((s / j) % 10 + '0');
 }
 
