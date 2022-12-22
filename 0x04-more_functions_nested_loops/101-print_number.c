@@ -2,7 +2,7 @@
 /**
  * print_number - print of a number
  * @n: number to be printed
- * Return: return zero
+ * Return: return Anything
  */
 void print_number(int n)
 {
@@ -22,6 +22,8 @@ void print_number(int n)
 		j = j * 10;
 	}
 	for (; j >= 1; j = j / 10)
+	{
 		_putchar((s / j) % 10 + '0');
+	}
 }
 
