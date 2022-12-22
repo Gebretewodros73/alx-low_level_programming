@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strcat - length of string
+ *_strncat - length of string
  *@src: string to count
  *@dest: string to return
  *@n: the limit of scr
