@@ -1,8 +1,9 @@
 #include "main.h"
 #include<stdio.h>
 /**
- *string_toupper - revers array
+ *string_toupper - character to upper
  *@str: lower *Return: returns Anything
+ *Return: upper case
  **/
 char *string_toupper(char *str)
 {
@@ -16,5 +17,6 @@ char *string_toupper(char *str)
 		}
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
