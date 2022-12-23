@@ -2,7 +2,7 @@
 #include<stdio.h>
 /**
  *string_toupper - revers array
- *Return: returns Anything
+ *@str: lower *Return: returns Anything
  **/
 char *string_toupper(char *str)
 {
