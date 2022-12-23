@@ -3,7 +3,7 @@
 /**
  *reverse_array - revers array
  *@a: array to revers
- *@n; max of array
+ *@n: max of array
  *Return: returns Anything
  **/
 void reverse_array(int *a, int n)
@@ -17,4 +17,5 @@ void reverse_array(int *a, int n)
 		printf("%d", a[i]);
 		i--;
 	}
+	printf("\n");
 }
