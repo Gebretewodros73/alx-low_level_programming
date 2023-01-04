@@ -9,7 +9,7 @@
  */
 void set_string(char **s, char *to)
 {
-	*s = malloc(sizeof(char)*(strlen(to) + 1));
+	*s = malloc(sizeof(char) * (strlen(to) + 1));
 	if (*s == NULL)
 	{
 		return;
