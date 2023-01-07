@@ -3,11 +3,9 @@
  * main - returns name
  * Return: zero
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	int argc;
-	char argv[];
-
-	printf("%s\n", argv[0]);
+	printf("%d\n", argc - 1);
+	(void)argv;
 	return (0);
 }
