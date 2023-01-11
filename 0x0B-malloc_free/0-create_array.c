@@ -4,6 +4,7 @@
  * create_array - initialize with a specific char
  * @size: size of char
  * @c: input char
+ * Return: NULL and size of
  */
 char *create_array(unsigned int size, char c)
 {
@@ -11,19 +12,21 @@ char *create_array(unsigned int size, char c)
 	unsigned int po;
 
 	if (size == 0)
-		return(NULL);
+		return (NULL);
 	bu = (char *) malloc(size * sizeof(c));
 
 	if (bu == 0)
-		return(NULL);
+	{
+		return (NULL);
+	}
 	else
 	{
 		po = 0;
-		while(po < size)
+		while (po < size)
 		{
 			*(bu + po) = c;
 			po++;
 		}
-		return(bu);
+		return (bu);
 	}
 }
