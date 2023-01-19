@@ -15,7 +15,7 @@ int op_add(int a, int b)
 	return (a + b);
 }
 /**
- *op_add - Return subtract
+ *op_sub - Return subtract
  * @a: first number
  * @b: second number
  * Return: subtract
