@@ -6,24 +6,27 @@
  */
 void print_number(int n)
 {
-	int s, i, j = 1;
+	int count, i, j;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		s = n * -1;
+		i = n * -1;
 	}
 	else
-		s = n;
-	i = s;
-	while (i > 9)
 	{
-		i = i / 10;
-		j = j * 10;
+		i = n;
 	}
-	for (; j >= 1; j = j / 10)
+	j = i;
+	count = 1;
+	while (j > 9)
 	{
-		_putchar((s / j) % 10 + '0');
+		j = j / 10;
+		count = count * 10;
+	}
+	for (; count >= 1; count = count / 10)
+	{
+		_putchar(i / count % 10 + '0');
 	}
 }
 

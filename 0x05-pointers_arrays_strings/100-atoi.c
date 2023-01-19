@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * _atoi - prints the othe half
  * @s: the character to be ordered
@@ -17,7 +18,7 @@ int _atoi(char *s)
 	}
 	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
 	{
-		if (n >= 0)
+		if(n >= 0)
 		{
 			n = n * 10 - (s[i] - '0');
 			i++;
