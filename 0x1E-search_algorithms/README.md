@@ -45,7 +45,7 @@ These algorithms provide efficient ways to search for values in arrays and linke
 
 1. `1-main.c` and `1-binary.c`: These files are related to the task of implementing the binary search algorithm. You should write the binary search function in [1-binary.c](./1-binary.c), which performs a binary search on a sorted array. Use [1-main.c](./test/1-main.c) to compile and run your code for testing.
 
-2. [2-O](./2-O), [3-O](./3-O), [4-O](./4-O), [5-O](./5-O), [6-O](./6-O), [101-O](./101-O), [102-O](./102-O), [103-O](./103-O), [104-O](./104-O), [105-O](./105-0), [106-O](./106-O), [107-O](./107-O), [108-O](./108-O): These files are associated with the Big O analysis task. Each file contains the time complexity and space complexity analysis of different search algorithms. You need to provide the correct big O notation for each algorithm in the respective files.
+2. [2-O](./2-O), [3-O](./3-O), [4-O](./4-O), [5-O](./5-O), [6-O](./6-O), [101-O](./101-O), [107-O](./107-O), [108-O](./108-O): These files are associated with the Big O analysis task. Each file contains the time complexity and space complexity analysis of different search algorithms. You need to provide the correct big O notation for each algorithm in the respective files.
 
 3. `100-jump.c`: These files are for the task of implementing the jump search algorithm. Implement the jump search function in [100-jump.c](./100-jump.c), which performs a jump search on a sorted array. Compile and run [100-main.c](./test/100-main.c) to test your code.
 
