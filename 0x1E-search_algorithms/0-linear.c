@@ -2,7 +2,7 @@
 
 /**
  * linear_search - searches for a value in an array of integers
- *                 using the Linear search algorithm
+ * using the Linear search algorithm
  *
  * @array: input array
  * @size: size of the array
@@ -12,17 +12,17 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i;
+	int i;
 
 	/* Check if array is NULL */
 	if (array == NULL)
 		return (-1);
 
 	/* Perform linear search */
-	for (i = 0; i < size; i++)
+	for (i = 0; i < (int)size; i++)
 	{
 		/* Print the value being check */
-		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+		printf("Value checked array[%u] = [%d]\n", i, array[i]);
 
 		/* If the value is found, return the index */
 		if (value == array[i])
